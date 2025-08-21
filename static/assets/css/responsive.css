@@ -1,0 +1,689 @@
+
+/* Medium Layout: 1200px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 45px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px 10px;
+        position: relative;
+    }
+    
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.show .dropdown-menu {
+        top: 98px;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item {
+        font-size: 14px;
+    }
+
+    .header-area .header-area-inner:before {
+        background-position: center;
+        background-size: cover;
+    }
+    .header-area .header-area-inner .title,
+    .header-area .single-header-carousel-item .title {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .header-area .header-area-inner .subtitle,
+    .header-area .single-header-carousel-item .subtitle {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .about-us-area .left-content-area .title,
+    .what-we-do-area .right-content .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .single-what-we-do .content .title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section-title .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .single-service-item-two .content .title {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .single-blog-classic-post .entry-content .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .single-blog-classic-post.format-link .entry-content .link {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog-details-page-content-area .single-post-details-item .entry-content .title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .blog-details-page-content-area .single-post-details-item .entry-content .post-meta li{
+        font-size: 14px;
+    }
+    
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-area .navbar-collapse {
+        position: absolute;
+        top: 83px;
+        background: #ffffff;
+        z-index: 9;
+        right: 0;
+        width: 250px;
+        padding-left: 20px;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
+        border: 0;
+    }
+    .navbar-area.navbar.navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link.pl-0 {
+        padding-left: 0.4rem !important;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        padding: 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .dropdown-item {
+        background: #fff;
+        color: rgba(0, 0, 0, 0.8);
+        border: 0;
+    }
+
+    .navbar-area {
+        top: 0;
+        height: 100px;
+    }
+    .logo-wrapper.navbar-brand {
+        padding-top: 0;
+    }
+
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        line-height: 35px;
+    }
+    
+    .navbar-area.nav-fixed {
+        padding: 20px 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item:hover .dropdown-menu {
+        border: none;
+    }
+    .navbar-area.nav-fixed .navbar-collapse {
+        top: 80px;
+    }
+    .header-area .header-right-area{
+        display: none;
+    }
+    
+    .navbar-area .nav-container {
+        position: relative;
+    }
+    .navbar-area .nav-right-content {
+        display: none;
+    }
+    .navbar-area.white .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .about-us-area .right-content-area {
+        margin-bottom: 30px;
+    }
+    .single-counter-item{
+        margin-bottom: 30px;
+    }
+    .call-to-action-area,
+    .price-plan-area{
+        padding-bottom: 70px;
+    }
+    .what-we-do-area .left-content {
+        margin-bottom: 30px;
+    }
+    .single-price-plan{
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+    .single-blog-articles{
+        margin-bottom: 30px;
+    }
+    .blog-article-area{
+        padding-bottom: 70px;
+    }
+    .widget.footer-widget{
+        margin-bottom: 30px;
+    }
+    .copyright-area{
+        margin-top: 70px;
+    }
+
+    .navbar-area.white .navbar-collapse .navbar-nav .nav-item .nav-link,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item:first-child{
+        border-top: 1px solid #e2e2e2;
+    }
+    .call-to-action-area-two .left-content .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .single-history-item .img-wrapper {
+        margin-bottom: 30px;
+    }
+    .our-history-area{
+        padding-bottom: 70px;
+    }
+    .service-sidebar {
+        margin-top: 40px;
+    }
+    .portfolio-widget-area{
+        margin-top: 40px;
+    }
+    .single-team-member .thumb img{
+        width: 100%;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .navbar-area .navbar-collapse .navbar-nav .nav-item:hover .dropdown-menu,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.show .dropdown-menu {
+        height: auto;
+    }
+    .sidebar{
+        margin-top: 40px;
+    }
+    .blog-page-content-area{
+        padding-bottom: 100px;
+    }
+}
+
+/* Tablet Layout wide: 768px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-area .navbar-collapse {
+        position: absolute;
+        top: 83px;
+        background: #ffffff;
+        z-index: 9;
+        right: 0;
+        width: 250px;
+        padding-left: 20px;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
+        border: 0;
+    }
+    .navbar-area.navbar.navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link.pl-0 {
+        padding-left: 0.4rem !important;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        padding: 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .dropdown-item {
+        background: #fff;
+        color: rgba(0, 0, 0, 0.8);
+        border: 0;
+    }
+    
+    .navbar-area {
+        top: 0;
+        height: 100px;
+    }
+    .logo-wrapper.navbar-brand {
+        padding-top: 0;
+    }
+
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        line-height: 35px;
+    }
+    
+    .navbar-area.nav-fixed {
+        padding: 20px 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item:hover .dropdown-menu {
+        border: none;
+    }
+    .navbar-area.nav-fixed .navbar-collapse {
+        top: 80px;
+    }
+    .navbar-area .nav-container {
+        position: relative;
+    }
+    .navbar-area .nav-right-content{
+        display: none;
+    }
+    .navbar-area.white .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: rgba(0, 0, 0, 0.8);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: rgba(0, 0, 0, 0.8);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item:last-child{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+        height: 0;
+        overflow: hidden;
+        transition: .3s ease-in;
+    }
+    
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.dropdown.show .dropdown-menu {
+        height: auto;
+    }
+    .navbar-area.white .navbar-collapse .navbar-nav .nav-item .nav-link {
+        border-top: 1px solid #e2e2e2;
+    }
+
+    .support-area .left-content{
+        display: block;
+        text-align: center;
+    }
+    .support-area .right-content{
+        display: block;
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .header-area .header-area-inner .title,
+    .header-area .single-header-carousel-item .title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .header-area .header-area-inner .subtitle,
+    .header-area .single-header-carousel-item .subtitle {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .about-us-area .right-content-area .img-wrap {
+        margin-bottom: 30px;
+    }
+    .about-us-area .left-content-area .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .call-to-action-area {
+        padding: 90px 0 70px;
+    }
+    .single-counter-item {
+        margin-bottom: 30px;
+    }
+    .single-counter-item .count-num {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .what-we-do-area .right-content .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .single-what-we-do .content .title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section-title .title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .single-price-plan{
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+    .price-plan-area{
+        padding-bottom: 70px;
+    }
+    .single-blog-articles .thumb img{
+        width: 100%;
+    }
+    .single-blog-articles{
+        margin-bottom: 30px;
+    }
+    .blog-article-area{
+        padding-bottom: 70px;
+    }
+    .widget.footer-widget{
+        margin-bottom: 30px;
+    }
+    .copyright-area{
+        margin-top: 70px;
+    }
+    .what-we-do-area .img-wrapper {
+        margin-bottom: 30px;
+    }
+    .call-to-action-area-two .left-content .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .call-to-action-area-two .right-content{
+        float: none;
+    }
+    .single-history-item .img-wrapper {
+        margin-bottom: 30px;
+    }
+    .our-history-area{
+        padding-bottom: 70px;
+    }
+    .single-service-item-three .thumb img{
+        width: 100%;
+    }
+    .service-content-area .entry-content .img-wrap {
+        margin-bottom: 20px;
+    }
+    .service-sidebar {
+        margin-top: 40px;
+    }
+    .single-team-member .thumb img {
+        width: 100%;
+    }
+    .single-blog-classic-post .entry-content .title {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .single-blog-classic-post .entry-content .post-meta li {
+        font-size: 14px;
+    }
+    .single-blog-classic-post.format-quote .entry-content .quote {
+        margin-left: 90px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .sidebar {
+        margin-top: 40px;
+    }
+    .blog-page-content-area{
+        padding-bottom: 100px;
+    }
+    .blog-details-page-content-area .single-post-details-item .entry-content .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .single-contact-info{
+        margin-bottom: 30px;
+    }
+}
+
+
+/* medium tablet layout 599px */
+
+@media only screen and (max-width: 599px) {
+   .navbar-area,
+   .navbar-area.nav-fixed {
+       padding: 20px;
+   }
+   .what-we-do-area .shped-1,
+   .what-we-do-area .shped-2,
+   .what-we-do-area .shped-3,
+   .price-plan-area .shape-2,
+   .price-plan-area .shape-1{
+       display: none;
+   }
+   .portfolio-widget-area{
+       margin-top: 40px;
+   }
+   
+   .single-blog-classic-post .entry-content .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .single-blog-classic-post.format-link .entry-content .link {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+}
+
+@media only screen and (min-width:415px) and (max-width: 450px){
+    .about-us-area .left-content-area .title {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .what-we-do-area .right-content .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .single-what-we-do .content .title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .single-price-plan .price-header .price-wrap .price {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .call-to-action-area-two .left-content .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .error-content-area .errro-text {
+        font-size: 155px;
+        line-height: 114px;
+    }
+    .error-content-area .title {
+        font-size: 24px;
+    }
+}
+/* mobile tablet layout 414px */
+
+@media only screen and (max-width: 414px) {
+  
+    .navbar-area.home-two {
+        height: 100px;
+    }
+    .navbar-area .nav-container {
+        position: relative;
+        margin-top: 0px;
+    }
+    .navbar-area.nav-fixed .nav-container {
+        position: relative;
+        margin-top: 0px;
+    }
+    .what-we-do-area .right-content .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .single-what-we-do .content .title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .single-price-plan .price-header .price-wrap .price {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .header-area .single-header-carousel-item,
+    .header-area .header-area-inner {
+        padding: 180px 0 190px 0;
+    }
+    .single-service-item-two .content .title {
+        font-size: 21px;
+        line-height: 31px;
+    }
+    .single-service-item-two .icon {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .about-us-area .left-content-area .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .accordion-content-area {
+        margin-bottom: 30px;
+    }
+    .error-content-area .errro-text {
+        font-size: 150px;
+        line-height: 140px;
+    }
+    .error-content-area .title{
+        font-size: 24px;
+    }
+    .single-blog-classic-post .entry-content .title {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .blog-details-page-content-area .entry-footer .right{
+        float: none;
+        display: block;
+        margin-top: 20px;
+    }
+    .breadcrumb-area .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    .portfolio-details-area{
+        padding-bottom: 100px;
+    }
+    
+}
+
+/* mobile tablet layout 375px */
+
+@media only screen and (max-width: 384px) {
+   
+    .navbar-area .nav-container {
+        position: relative;
+        margin-top: 40px;
+    }
+    .navbar-area .nav-container {
+        margin-top: 8px;
+    }
+    .header-area .header-area-inner .subtitle, .header-area .single-header-carousel-item .subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .section-title .subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .call-to-action-area-two .left-content .title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .section-title .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .single-blog-classic-post.format-quote .entry-content:after,
+    .single-blog-classic-post.format-link .entry-content:after{
+        display: none;
+    }
+    .single-blog-classic-post.format-quote .entry-content .quote,
+    .single-blog-classic-post.format-link .entry-content .link{
+        margin-left: 0;
+    }
+    .single-what-we-do {
+        display: block;
+    }
+    
+    .single-what-we-do .icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .single-what-we-do .content {
+        margin-left: 0;
+    }
+    .single-price-plan .price-header .price-wrap .price-inner:before ,
+    .single-price-plan .price-header .price-wrap .price-inner:after{
+        height: 90px;
+    }
+    .blog-article-area:after{
+        display: none;
+    }
+    .accordion-content-area .card .card-header a{
+        padding-right: 40px;
+    }
+    .faq-page-content-area{
+        padding-bottom: 70px;
+    }
+    .error-content-area .errro-text {
+        font-size: 120px;
+        line-height: 80px;
+    }
+    .error-content-area .title {
+        font-size: 20px;
+    }
+    .blog-details-page-content-area .comment-area .comment-list li .single-comment-wrap {
+        display: block;
+    }
+    .widget_popular_posts .single-popular-post-item .content .title {
+        font-size: 16px;
+        line-height: 26px;
+    }
+   
+}
+
+/* mobile tablet layout 360px */
+
+@media only screen and (max-width: 360px) {
+    .single-price-plan .price-header .price-wrap .month {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* mobile tablet layout 320px */
+
+@media only screen and (max-width: 330px) {
+    .about-us-area:after,
+    .about-us-area .about-right-circle ,
+    .service-area .shaped-bg-1{
+        display: none;
+    }
+    .about-us-area .left-content-area .title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .service-area{
+        border-top: 1px solid #e2e2e2;
+    }
+    .section-title .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .header-area .header-area-inner .title, .header-area .single-header-carousel-item .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .header-area .header-area-inner .subtitle, .header-area .single-header-carousel-item .subtitle {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .call-to-action-area-two .left-content .title {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .breadcrumb-area .title {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+    .portfolio-content-area .entry-content .title {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .error-content-area .errro-text {
+        font-weight: 600;
+    }
+    .blog-details-page-content-area .single-post-details-item .entry-content .title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

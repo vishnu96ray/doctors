@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main %}
+
+	<section class="contact1-area">
+
+
+	<div class="container animated fadeIn">
+
+	  <div class="row">
+	    <div class="wrapper fadeInDown">
+	  <div id="formContent">
+	    <!-- Tabs Titles -->
+
+	    <!-- Icon -->
+	    <div class="fadeIn first">
+	     
+	    </div>
+	    <h4>Login</h4>
+	    <!-- Login Form -->
+	    <form method="post" class="login_form">
+	      {% csrf_token %}
+	      <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username/Email">
+	      <input type="text" id="password" class="fadeIn third" name="password" placeholder="Passowrd">
+	      <input type="submit" class="fadeIn fourth" value="Log In">
+	    </form>
+
+	    <!-- Remind Passowrd -->
+	    <!-- <div id="formFooter">
+	      <a class="underlineHover" href="">Forgot Password?</a>
+	    </div> -->	
+
+	<!-- 	<a href="/forgot/password/">Forgot Password?</a> -->
+		<a href="/register/user/">Register</a>						
+	  </div>
+	</div>
+	    
+	  </div>
+
+	</div>
+
+	</section>
+
+    <!-- main -->
+    <script src="js/main.js"></script>
+	<script>
+	 $(document).ready(function () {
+            $('.collapse.in').prev('.panel-heading').addClass('active');
+            $('#accordion, #bs-collapse')
+                .on('show.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').addClass('active');
+                })
+                .on('hide.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').removeClass('active');
+                });
+        });</script>
+
+
+{% endblock %}

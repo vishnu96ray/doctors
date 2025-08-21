@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main %}
+
+	<div class="container">
+		<div class="row">			
+			<div class="col-sm-12 col-xs-12 mt-4 mt-5">
+                <div class="item-content">
+                    <div class="item-content-wrap">
+                        <h3 class="item-title title-bar-primary5">Video Gallery</h3>
+
+                        <!-- Gallery -->
+						<div class="row">
+						  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+						    <video name='demo' controls autoplay width='100%' height='25%'>
+							<source src="{% static 'assets/img/VID-20210529-WA0001.MP4' %}" type="video/mp4" class="w-100 shadow-1-strong rounded mb-4" alt=""></source>
+						
+							</video>
+
+							<video name='demo' controls autoplay width='100%' height='25%'>
+								<source src="{% static 'assets/img/VID-20210529-WA0007.MP4' %}" type="video/mp4" class="w-100 shadow-1-strong rounded mb-4" alt=""></source>
+							
+								</video>
+						  </div>
+
+						  <div class="col-lg-4 mb-4 mb-lg-0">
+						    <img
+						      src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
+						      class="w-100 shadow-1-strong rounded mb-4"
+						      alt=""
+						    />
+
+						    <img
+						      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+						      class="w-100 shadow-1-strong rounded mb-4"
+						      alt=""
+						    />
+						  </div>
+
+						  <div class="col-lg-4 mb-4 mb-lg-0">
+						    <img
+						      src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+						      class="w-100 shadow-1-strong rounded mb-4"
+						      alt=""
+						    />
+
+						    <img
+						      src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg"
+						      class="w-100 shadow-1-strong rounded mb-4"
+						      alt=""
+						    />
+						  </div>
+						</div>
+						<!-- Gallery -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}                        

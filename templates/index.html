@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} allowtalks {% endblock %}</title>
+    <!-- favicon --> 
+    <link rel="shortcut icon" href="{% static 'assets/img/logo.png' %}" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <!-- animate -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- responsive -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    {% block extracss %}
+    {% endblock %}
+</head>
+
+<body> 
+    {% block body %}
+
+    <div class="container-fluid" style="padding:4px;">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="tophead-contact header-contact-layout4 phone-has-address-off">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Locations :- Myfield Garden, Sector 50, Harya </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <i class="fas fa-phone" aria-hidden="true"></i>any question:&nbsp;<a href="tel:9811519900">+91-9811519900 </a>    
+                    </div>
+                    <div class="col-md-5 text-center">
+                       <a href="/newappointment/" class="boxed-btn" style="background-color:darkblue; font-weight:bold;">Appointment</a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+
+    <!-- navbar area start -->
+    <nav class="navbar navbar-area navbar-expand-lg white">
+        <div class="container nav-container">
+            <div class="logo-wrapper navbar-brand bg-light mt-1 mb-1">
+                <a href="/" class="logo ">
+                    <!-- <img src="{% static 'assets/img/logo.png' %}" width="70rem" height="auto" alt="logo"> -->
+                    <div style="padding:4px;"><strong style="color:darkblue;">allows</strong><strong style="color:red;">talk</strong></div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="hostinglab">
+                <!-- navbar collapse start -->
+                <ul class="navbar-nav">
+                    <!-- navbar- nav -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/allowtalks/aboutus/">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Facilities</a>
+                        <div class="dropdown-menu">
+                            <a href="/voicetherepy/" class="dropdown-item">Voice Therapy</a>
+                            <a href="/speechtherepy/" class="dropdown-item">Speech Therapy</a>
+                            <!-- <div class="dropdowm-menu">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Speech Therapy</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Speech Therapy Classes</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Speech Therapy Benefits</a>
+                            </div> -->
+                            <a href="/hearingtest/" class="dropdown-item">Hearing Test</a>
+                            <a href="/fluency/" class="dropdown-item">Fluency Therapy</a>
+                            <a href="/language/" class="dropdown-item">Language Therapy</a>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Product</a>
+                        <div class="dropdown-menu">
+                            <a href="/baha/" class="dropdown-item">BAHA</a>
+                            <a href="/wireless/" class="dropdown-item">Wireless Accesories</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Hearing Aids</a>
+                        <div class="dropdown-menu">
+                            <a href="/hearingaids/" class="dropdown-item">Hearing Aids</a>
+                            <a href="/digital_hearing/" class="dropdown-item">Digital Hearing Aids</a>
+                            <a href="/hearingaidshelp/" class="dropdown-item">How Do We Hear</a>
+                            <a href="/hearingaids_types/" class="dropdown-item">Type of Hearing Aids</a>
+                            <a href="/evaluate/" class="dropdown-item">How To Evaluate Hearing Aids</a>
+                            <a href="/hearingcare/" class="dropdown-item">Care And Maintenance</a>
+                            <a href="/wireless_hearingads/" class="dropdown-item">How Wireless Hearing Aids Work</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Cochlear Implants</a>
+                        <div class="dropdown-menu">
+                            <a href="/cochalar_impliments/" class="dropdown-item">Cochlear Implants</a>
+                            <a href="/cochalar_works/" class="dropdown-item">How To Cochlear Implants Work</a>
+                            <a href="/cochalar_mapping/" class="dropdown-item">Cochlear Implants Mapping</a>
+                            <a href="/cochalar_benefits/" class="dropdown-item">Cochlear Implants Benefits</a>
+                            <a href="/cochalar_parts/" class="dropdown-item">Part Of Cochlear Implants</a>
+                            <a href="/cochalar_maintines/" class="dropdown-item">Care & Maintenance</a>
+                            <a href="/cochalar_service/" class="dropdown-item">Service And Repairs Cochlear Implants</a>
+                            <a href="/cochalar_auditoring/" class="dropdown-item">Auditory Verbal Therapy</a>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery</a>
+                        <div class="dropdown-menu">
+                            <a href="/galleryimage/" class="dropdown-item">Image Gallery</a>
+                            <a href="/galleryvideo/" class="dropdown-item">Video Gallery</a>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/allowtalks/contactus/">Contact</a>
+                    </li>
+                    
+                    {% comment %}
+                    <li class="nav-item">
+                        {% if user.is_authenticated %}
+                        <a class="nav-link" href="/allowtalks/" style=" width:100%; height:auto; background:#535252; color: white; border-radius:2px;">Dashboard</a>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/logout/">Logout</a>
+                        </li> -->    
+                        {% else %}
+                        <a class="nav-link" href="/signin/">LogIn/Register</a>
+                        {% endif %}
+                    </li>
+                    {% endcomment %}
+                </ul>
+                <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar btn wrapper -->
+            <div class="responsive-mobile-menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hostinglab" aria-controls="hostinglab"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar area end -->
+
+
+    {% block main %}
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'assets/img/slider_img/ashaspeechhearingclinic-team.jpg' %}" alt="First slide">
+            </div>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'assets/img/slider_img/ashaspeechhearingclinic-team.jpg' %}" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'assets/img/slider_img/ashaspeechhearingclinic-team.jpg' %}" alt="Third slide">
+            </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+
+    
+    <!-- header area start -->
+    <div class="header-area">
+        <div class="header-area-inner header-area-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="header-inner"><!-- header inner -->
+                            <div class="subwrap wow FadeInDown"><span class="subtitle ">The <span class="base-color">Best</div>
+                            <h1 class="title wow FadeInDown">Medical Service</h1>
+                            <p class="wow slideInUp"> 
+                                    Lorem Ipsum is simply dum my text of the printing and type setting  the industry. Lorem Ipsum has been the completed.
+                            </p>
+                            <div class="btn-wrapper">
+                                {% if user.is_authenticated %}
+                                <a href="/allowtalks/" class="boxed-btn">Get Started</a>
+                                <!-- <a href="/allowtalks/" class="boxed-btn">Get Started</a> -->
+
+                                {% else %}
+                                <!-- <a href="/signin/" class="boxed-btn">Get Started</a> -->
+                                <a href="/newappointment/" class="boxed-btn">Get Started</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- header area end -->
+
+
+
+    <section>
+        <div class="homepage-boxes">
+        <div class="container">
+        <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+        <div class="opening-hours">
+        <h2 class="d-flex align-items-center">Opening Hours</h2>
+        <ul class="p-0 m-0">
+        <li>Monday - Thursday <span>8.00 - 19.00</span></li>
+        <li>Friday <span>8.00 - 18.30</span></li>
+        <li>Saturday <span>9.30 - 17.00</span></li>
+        <li>Sunday <span>9.30 - 15.00</span></li>
+        </ul>
+        </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+        <div class="emergency-box">
+        <h2 class="d-flex align-items-center">Emergency</h2>
+        <div class="call-btn button gradient-bg">
+        <a class="d-flex justify-content-center align-items-center" href="#"><img src="images/emergency-call.png"> +91-9811519900</a>
+        </div>
+        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec males uada lorem maximus mauris sceler isque, at rutrum nulla.</p>
+        </div>
+        </div>
+<!--             <div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
+            <div class="appointment-box">
+            <h2 class="d-flex align-items-center">Make an Appointment</h2>
+            <form class="d-flex flex-wrap justify-content-between">
+            <select class="select-department">
+            <option value="value1">Select Department</option>
+            <option value="value2">Select Department 1</option>
+            <option value="value3">Select Department 2</option>
+            </select>
+            <select class="select-doctor">
+            <option>Select Doctor</option>
+            <option>Select Doctor 1</option>
+            <option>Select Doctor 2</option>
+            </select>
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Phone No">
+            <input class="button gradient-bg" type="submit" value="Book Appoitnment">
+            </form>
+            </div>
+            </div> -->
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <div id="carouselExampleControls " class="carousel slide container-fluid bg-light" data-ride="carousel" style="margin:100px 0px ;">
+        <div class="carousel-inner ">
+            <div class="title  ">
+                <p class="text-center text-dark lead">Services</p>
+                <h2 class="text-center mb-5 mt5">Our Services</h2>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row bg-light">
+                    <div class="col-4 card">
+                        <img class="d-block  w-100  card-img-top" src="{% static 'assets/img/pic1.jpeg' %}" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/BERA-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="#">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/What-is-a-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/BERA-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/What-is-a-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/Language-Therapy-3-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/What-is-a-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/Language-Therapy-3-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/OAE-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+
+
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/Language-Therapy-3-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/OAE-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/ASSR-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+
+
+
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/OAE-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/ASSR-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-4 card">
+                        <img class="d-block w-100 card-img-top" src="https://www.ashaspeechhearingclinic.com/wp-content/uploads/2021/03/BERA-Hearing-Test-630x408.jpg" alt="First slide">
+                        <div class="card-body">
+
+                            <h3 class="card-title"><a href="https://www.ashaspeechhearingclinic.com/facilities/hearing-test/">Hearing
+                                    Test</a></h3>
+                            <div class="card-text">
+                                <p>What is a Hearing Test Types of hearing test that a person should undergo.
+                                    Hearing…</p>
+                            </div>
+                            <a class="item-btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="our-departments">
+            <!-- <div class="container">
+            <div class="row"> -->
+            <div class="col-12">
+            <div class="our-departments-wrap">
+            <h2>Our Departments</h2>
+            <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/cardiogram.png" alt="">
+            <h3>Cardioology</h3>
+            </header>
+            <div class="entry-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/stomach-2.png" alt="">
+            <h3>Gastroenterology</h3>
+            </header>
+            <div class="entry-content">
+            <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/blood-sample-2.png" alt="">
+            <h3>Medical Lab</h3>
+            </header>
+            <div class="entry-content">
+            <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center"> 
+            <img src="images/teeth.png" alt="">
+            <h3>Dental Care</h3>
+            </header>
+            <div class="entry-content">
+            <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/stretcher.png" alt="">
+            <h3>Surgery</h3>
+            </header>
+            <div class="entry-content">
+            <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/scanner.png" alt="">
+            <h3>Neurology</h3>
+            </header>
+            <div class="entry-content">
+            <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-md-0">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/bones.png" alt="">
+            <h3>Orthopaedy</h3>
+            </header>
+            <div class="entry-content">
+            <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-lg-0">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/blood-donation-2.png" alt="">
+            <h3>Pediatry</h3>
+            </header>
+            <div class="entry-content">
+            <p>Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+             </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+            </footer>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-0">
+            <div class="our-departments-cont">
+            <header class="entry-header d-flex flex-wrap align-items-center">
+            <img src="images/glasses.png" alt="">
+            <h3>Ophthalmology</h3>
+            </header>
+            <div class="entry-content">
+            <p>Lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus.</p>
+            </div>
+            <footer class="entry-footer">
+            <a href="#">read more</a>
+             </footer>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+<!--             </div>
+            </div> -->
+            </div>
+    </section>
+
+
+
+
+    {% endblock %}
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-4">
+                    <div class="footer-widget about_wid get widget"><!-- footer widget -->
+                        <a href="index.html" class="footer-logo">
+                            <!-- <img src="{% static 'assets/img/logo.png' %}" width="98px" height="auto" alt="footer logo" class="bg-light"> -->
+                            <div class="text-center" style="padding:12px 8px; background:#ffffff; font-size:18px;"><strong style="color:darkblue;">allows</strong><strong style="color:red;">talk</strong></div>
+                        </a>
+                         
+                         <p><strong style="color:#fff!important;">Head Office:</strong><br> H7 New Friends Colony New Delhi-110001, India</p>
+                         <p>+91 7011101001</p>
+                         <p>info@allowstalk.com</p>   
+                        <!-- <ul class="social-icon">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul> -->
+                    </div><!-- footer widget -->
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-widget widget_nav_menu widget"><!-- footer widget -->
+                        <h4 class="widget-title">Department</h4>
+                        <ul>
+                            <li><a href="#">Market Research</a></li>
+                            <li><a href="#">Keyword Targeting</a></li>
+                            <li><a href="#">Email Marketing</a></li>
+                            <li><a href="#">Awesome Design</a></li>
+                            <li><a href="#">Social Marketing</a></li>
+                        </ul>
+                    </div><!-- footer widget -->
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-widget widget_nav_menu widget"><!-- footer widget -->
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/allowtalks/aboutus/">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="/allowtalks/contactus/">Contact Us</a></li>
+                        </ul>
+                    </div><!-- footer widget -->
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8">
+                    <div class="footer-widget about_widget widget"><!-- footer widget -->
+                        <!-- <a href="index.html" class="footer-logo">
+                            <img src="img/footer-logo.png" alt="footer logo">
+                        </a> -->
+                        <h4 class="widget-title">Ours Branches</h4>
+
+                        <ul class="contact-info-list">
+                            <li style="color: rgba(255, 255, 255, 0.6)!important;">B-28, Myfield Garden, Sector 50, <br>Gurugram Haryana-122001</li>
+                            <li style="color: rgba(255, 255, 255, 0.6)!important;"> +91-9811519900</li>
+                            <li style="color: rgba(255, 255, 255, 0.6)!important;">support@allowtalks.com</li>
+                        </ul>
+                    </div><!-- footer widget -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                            <b style="color:darkblue;">allows</b><b style="color:red;">talk</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+
+    <div class="back-to-top base-color-2">
+            <i class="fas fa-rocket"></i>
+    </div>
+
+    <!-- jquery -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>    
+    <!-- bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- way poin js-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+    <!-- wow js-->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    
+    <!-- main -->
+    <script src="js/main.js"></script>
+    {% block extrajs %}
+    <script>
+     $(document).ready(function () {
+            $('.collapse.in').prev('.panel-heading').addClass('active');
+            $('#accordion, #bs-collapse')
+                .on('show.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').addClass('active');
+                })
+                .on('hide.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').removeClass('active');
+                });
+        });</script>
+        {% endblock %}
+    
+    {% endblock %}
+    </body>
+
+    </html>
